@@ -1,0 +1,25 @@
+import 'dart:convert';
+
+class PokemonEntity {
+    int id;
+    String name;
+
+    PokemonEntity({
+        required this.id,
+        required this.name,
+    });
+
+    factory PokemonEntity.fromRawJson(String str) => PokemonEntity.fromJson(json.decode(str));
+
+    String toRawJson() => json.encode(toJson());
+
+    factory PokemonEntity.fromJson(Map<String, dynamic> json) => PokemonEntity(
+        id: json["id"],
+        name: json["name"],
+    );
+
+    Map<String, dynamic> toJson() => {
+        "id": id,
+        "name": name,
+    };
+}
