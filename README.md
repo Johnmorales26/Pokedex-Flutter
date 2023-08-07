@@ -1,6 +1,6 @@
 # pokedex_flutter
 
-A new Flutter project.
+This repository contains an exciting Pokédex developed with Flutter, an open-source platform for creating cross-platform mobile applications. The Pokédex offers Pokémon enthusiasts an interactive and user-friendly experience to explore and obtain information about different Pokémon from all generations.
 
 ## Getting Started
 
